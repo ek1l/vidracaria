@@ -1,0 +1,72 @@
+
+
+@import url(./style.css);
+
+
+@media only screen and (max-width: 1121px)   {
+    .borda-separa {
+        display: none;
+        
+    }
+
+    .texto-quem-somos {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+
+    }
+
+
+    .quem-somos {
+        gap: 38px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .texto-quem-somos {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    .img-logo img{
+        width: 150px;
+        padding: 20px;
+        } 
+}
+
+
+@media only screen and (max-width: 1223px) {
+    .contato {
+        padding-left: 30px;
+        color: white;
+        width: 100%;
+        background-color: #00285a;
+        display: flex;
+        flex-direction: column;
+        padding: 100px 100px 30px 30px;
+        justify-content: center;
+        height: 162px;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 1047px) {
+    .flexx {
+        flex-wrap: wrap;
+    }
+    .contato {
+        justify-content: center;
+        align-items: center;
+        padding: 100px 100px 60px 30px;
+    }
+}

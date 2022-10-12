@@ -1,0 +1,270 @@
+@font-face {
+    font-family:albertus-contato ;
+    src: url(../fontes/AlbertusMT.otf) format('opentype');
+}
+
+h1,h2 {
+    font-family:'albertus-contato' ;
+}
+
+@font-face {
+    font-family:bahnschrift-menu;
+    src: url(../fontes/BAHNSCHRIFT.TTF) format('opentype');
+}
+ul li {
+    font-family: 'bahnschrift-menu';
+}
+
+@font-face {
+    font-family:constantia-texto;
+    src: url(../fontes/Constantia\ Font.ttf) format('opentype');
+}
+
+p {
+    font-family: 'constantia-texto';
+}
+
+@font-face {
+    font-family:contato-avenir;
+    src: url(../fontes/Avenir\ LT\ Std\ 55\ Roman.otf) format('opentype');
+}
+
+.contato p,h2,button {
+    font-family: 'contato-avenir';
+}
+
+* {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+header {
+    padding-top: 40px;
+    width: 100%;
+    position: absolute;
+    
+
+}
+
+nav {
+     background: rgb(134,130,130);
+     background: linear-gradient(90deg, rgba(134,130,130,0.56) 0%, rgba(134,130,130,0.5634628851540616) 52%, rgba(134,130,130,0.56) 100%);
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+
+}
+
+nav #logo {
+    padding-left: 150px;
+}
+nav img {
+    width: 100px;
+
+}
+
+ul img {
+    width: 20px;}
+
+nav ul{
+    flex-wrap: wrap;
+    gap: 3px;
+    display: flex;
+    align-items: center;
+
+}
+
+nav ul li a{
+    background: rgb(215,215,215);
+    background: linear-gradient(90deg, rgba(215,215,215,0.59) 0%, rgba(215,215,215,0.5942752100840336) 52%, rgba(215,215,215,0.59) 100%);
+    color: black;
+    padding: 20px;
+}
+.redes {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.redes img {
+    width: 20px;
+    cursor: pointer;
+}
+
+/* MAIN */
+
+main {
+    width: 100%;
+}
+
+main img {
+    width: 100%;
+    height: 100%;
+    max-height: 800px;
+}
+
+
+/* SECTION */ 
+
+
+section {
+    padding-bottom: 90px;
+    width: 100%;
+}
+
+
+.img-logo img{
+width: 220px;
+}
+
+.quem-somos {
+    flex-wrap: wrap;
+    gap: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-quem-somos {
+    width: 100%;
+    max-width: 400px;
+}
+
+.texto-quem-somos  h1{
+    border-bottom: 2px solid #7e7fb8;
+    width: 50%;
+    color: #00577a;
+
+}
+
+.texto-quem-somos  p {
+    padding-top: 20px;
+    color: black;
+}
+
+
+.borda-separa {
+    width: 1px;
+    height:250px;
+    background-color: black;
+}
+
+
+/* SECTION 2 */
+
+
+.img-section-2 {
+    width: 100%;
+}
+
+.img-section-2 img{
+    width: 100%;
+}
+
+
+.galeria img{
+ width: 100%;
+}
+
+/* SECTION 3 */ 
+
+
+.img-section-3 {
+    width: 100%;
+}
+
+.img-section-3 img{
+    width: 800px ;
+}
+
+
+
+/* Direitos autorais */ 
+
+
+.direitos-autorais {
+    display: flex;
+    justify-content: center;
+}
+
+/* Contato */ 
+
+.flexx {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    margin-top: 200px;
+}
+
+.img-section-3 img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
+
+.contato {
+    padding-left: 30px;
+    color: white;
+    width: 100%;
+    background-color: #00285a;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 100px 30px 30px;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 218px;
+}
+
+.botao-fale {
+    padding-top: 25px;
+}
+.contato button {
+    cursor: pointer;
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: 0.5s;
+}
+
+.contato button:hover  {
+background-color: white;
+color: black;
+}
+
+.contato p {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 22px;
+}
+
+#ah2 {
+    font-size: 30px;
+}
+
+#espacamento {
+    padding-top: 30px;
+}
+
+
+.tudo {
+    width: 100%;
+}
+
+
+
+/* GALERIA */
+
+
