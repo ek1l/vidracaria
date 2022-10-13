@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
     <link rel="stylesheet" href="./assets/styles/responsividade.css">
-    <!-- <script src="./assets/scripts/script.js" defer></script> -->
+    <link rel="stylesheet" href="./assets/styles/menu.css">
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
@@ -17,13 +17,16 @@
   <body>
 
 
-    <header>
-      <nav>
+    <header class="header1">
+      <nav id="nav" class="itens">
+        <button id="btnmobile">&equiv;
+      
+        </button>
         <a href="#"><img id="logo" src="./assets/img/VB BORGES Logo.png" alt="" /></a>
-        <ul>
+        <ul id="menu">
           <li><a href="#">Home</a></li>
-          <li><a href="#">Quem Somos</a></li>
-          <li><a href="#">Serviços</a></li>
+          <li><a href="#quemsomos">Quem Somos</a></li>
+          <li><a href="#servicos">Serviços</a></li>
           <li><a href="#">Instalações</a></li>
           <li><a href="#">Contato</a></li>
           <div class="redes">
@@ -42,7 +45,7 @@
     </main>
 
     <section>
-      <div class="quem-somos">
+      <div id="quemsomos" class="quem-somos">
         <div class="img-logo">
           <img src="./assets/img/VB BORGES Logo.png" alt="" />
         </div>
@@ -53,15 +56,14 @@
           <h1>QUEM SOMOS</h1>
           <p>
             Somos uma empresa especializada em vidraçaria e esquadrias de
-            alumínio desde 2015, nossa missão atender sempre com qualidade e
-            transparencia
+            alumínio desde 2015, nossa missão é atender com qualidade e transparência.
           </p>
         </div>
       </div>
     </section>
 
     <section>
-      <div class="img-section-2">
+      <div id="servicos" class="img-section-2">
         <img src="./assets/img/VB BORGES 2.png" alt="" />
       </div>
     </section>
@@ -176,4 +178,5 @@
     </script>
 
   </body>
+  <script src="./assets/scripts/script.js"></script>
 </html>

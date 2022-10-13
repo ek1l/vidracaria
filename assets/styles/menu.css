@@ -1,0 +1,71 @@
+@media (min-width: 601px) {
+    #btnmobile {
+        display: none;
+    }
+}
+
+
+
+
+
+@media (max-width: 1014px) {
+    #btnmobile {
+        display: block;
+        padding: .5rem 1rem;
+        font-size: 3rem;
+        border: none;
+        background: none;
+        color: black !important; 
+    
+    }
+
+    #menu {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 111px;
+        right: 0px;
+        display: block;
+        z-index: 1000;
+        height: 0;
+        transition: .6s;
+        overflow-y: hidden;
+        visibility: hidden;
+        background-color: transparent ;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4.3px);
+        -webkit-backdrop-filter: blur(4.3px);
+        border: 1px solid rgba(255, 255, 255, 0.46);
+        
+             
+    }
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+    #menu li {
+        margin: 50px;
+        text-align: center;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 25px;
+    }
+
+    #nav.active #menu {
+        visibility: visible;
+        height: calc(100vh - 70px);
+        display: block;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom:2px black;
+    }
+
+    }
