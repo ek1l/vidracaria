@@ -32,6 +32,9 @@ p {
 .contato p,h2,button {
     font-family: 'contato-avenir';
 }
+html {
+    scroll-behavior: smooth;
+  }
 
 * {
     text-decoration: none;
@@ -47,6 +50,7 @@ header {
     padding-top: 40px;
     width: 100%;
     position: absolute;
+    
     
 
 }
@@ -84,6 +88,12 @@ nav ul li a{
     background: linear-gradient(90deg, rgba(215,215,215,0.59) 0%, rgba(215,215,215,0.5942752100840336) 52%, rgba(215,215,215,0.59) 100%);
     color: black;
     padding: 20px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: whitesmoke;
+
 }
 .redes {
     display: flex;
