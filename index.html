@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
     <link rel="stylesheet" href="./assets/styles/responsividade.css">
-    <script src="./assets/scripts/script.js" defer></script>
+    <!-- <script src="./assets/scripts/script.js" defer></script> -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
+
     <title>Vidraçaria Borges</title>
   </head>
   <body>
@@ -61,7 +66,7 @@
       </div>
     </section>
 
-    <section class="container-carrossel">
+    <!-- <section class="container-carrossel">
       <button class="arrow-left control" aria-label="PreviousImage">←</button>
       <button class="arrow-right control" aria-label="NextImage">→</button>
       <div class="galeria-wraper" id="img">
@@ -79,6 +84,29 @@
           <img src="./assets/img/imagem-exemplo.jpg" alt="" class="item current-item">
           <img src="./assets/img/250px-Kinet.jpg" alt="" class="item current-item">
          </div>
+      </div>
+    </section> -->
+
+
+    <section>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper gallery">
+         <img src="./assets/img/250px-Kinet.jpg" alt="" class="swiper-slide item current-item ">
+         <img src="./assets/img/imagem-exemplo.jpg" alt="" class="swiper-slide item current-item">
+         <img src="./assets/img/250px-Kinet.jpg" alt="" class="swiper-slide item current-item">
+         <img src="./assets/img/imagem-exemplo.jpg" alt="" class="swiper-slide item current-item">
+         <img src="./assets/img/250px-Kinet.jpg" alt="" class="swiper-slide item current-item">
+         <img src="./assets/img/imagem-exemplo.jpg" alt="" class="swiper-slide item current-item">
+         <img src="./assets/img/250px-Kinet.jpg" alt="" class="swiper-slide item current-item">
+         <img src="./assets/img/imagem-exemplo.jpg" alt="" class="swiper-slide item current-item">
+         <img src="./assets/img/imagem-exemplo.jpg" alt="" class="swiper-slide item current-item">
+         <img src="./assets/img/imagem-exemplo.jpg" alt="" class="swiper-slide item current-item">
+         <img src="./assets/img/250px-Kinet.jpg" alt="" class="swiper-slide item current-item">
+         <img src="./assets/img/imagem-exemplo.jpg" alt="" class="swiper-slide item current-item">
+        </div>
+        <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
       </div>
     </section>
 
@@ -101,5 +129,51 @@
     <div class="direitos-autorais">
       <p>2022 - Criado e desenvolvido por inovação marketing</p>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" ></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 6,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // autoplay:{
+        //   delay: 2000,
+        //   disableOnInteraction:false
+        // },
+        breakpoints: {
+                  0: {
+            slidesPerView: 1,
+            spaceBetween: 50,
+          },
+
+          380: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+
+        },
+      });
+    </script>
+
   </body>
 </html>
