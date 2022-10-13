@@ -24,6 +24,7 @@
         position: fixed;
         z-index: 999999;
         padding-top: 0px;
+        
     }
 
     #menu {
@@ -46,6 +47,7 @@
     }
 
     nav {
+        
         background: rgba(255, 255, 255, 0.1);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(3.5px);
@@ -99,6 +101,10 @@
         height: calc(100vh - 70px);
         display: block;
         overflow-y: auto;
+    }
+
+    nav #logo {
+        padding-left: 0px;
     }
 
     #menu a {
